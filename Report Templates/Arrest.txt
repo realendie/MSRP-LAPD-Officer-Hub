@@ -82,25 +82,27 @@ Suspect #1:
 DOB:  
 Charge:  
 
-SOURCE OF ACTIVITY:  
+Source of activity:
 
-INVESTIGATION:  
+Investigation:
 
-Arrest:  
+Arrest:
 
-INJURY/MEDICAL TREATMENT:  
+Injury / Medical Treatment:
 
-Booking:  
+Photographs:
 
-PHOTOGRAPHS, RECORDINGS, VIDEOS, BWC, AND DIGITAL IMAGING:  
+Booking:
 
-EVIDENCE:  
+Evidence:
 
-CANVASSING:  
+Canvassing:
 
-COURT INFORMATION:  
+Additional:
 
-Additional:  
+Property Stolen/ Recovered:
+
+Court information:
 ____________________________________________________  
 
 Signed:  
