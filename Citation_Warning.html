@@ -6,6 +6,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MSRP | LAPD Officer Hub | Citation</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .copy-btn {
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .copy-btn:hover {
+      background-color: darkgreen;
+    }
+
+    .copy-success {
+      color: green;
+      font-weight: bold;
+      margin-left: 10px;
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+
+    .report-container {
+      position: relative;
+    }
+
+    .btn-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 
 <body>
@@ -51,9 +87,14 @@
   <br>
   <br>
   </div>
-  <div style="
-        margin-left: 500px;
-        margin-right: 500px;
+  
+  <!-- Citation Report -->
+  <div class="report-container" style="margin-left: 500px; margin-right: 500px;">
+    <div class="btn-container">
+      <button class="copy-btn" data-report="citation">Copy Citation Form</button>
+      <span class="copy-success" id="citation-success">Copied!</span>
+    </div>
+    <div id="citation-report" style="
         font-family: serif;
         text-align: left;
         border: 1px solid black;
@@ -61,333 +102,380 @@
         box-shadow: 4px 8px #888888;
         margin-bottom: 20px;
       ">
-    <p style="text-align: top">
-      <strong>LAPD Citation / Notice to Appear</strong><br />
-      <hr />
-      </strong><br />
-    </p>
+      <p style="text-align: top">
+        <strong>LAPD Citation / Notice to Appear</strong><br />
+        <hr />
+        </strong><br />
+      </p>
 
-    <p>
-      LOS ANGELES POLICE DEPARTMENT<br />
-      CITY OF LOS ANGELES<br />
-      NOTICE TO APPEAR<br />
-      ____________________________________________________<br /><br />
+      <p>
+        LOS ANGELES POLICE DEPARTMENT<br />
+        CITY OF LOS ANGELES<br />
+        NOTICE TO APPEAR<br />
+        ____________________________________________________<br /><br />
 
-      TRAFFIC: _<br />
-      NONTRAFFIC: _<br />
-      MISDEMEANOR: _<br />
-      ____________________________________________________<br /><br />
+        TRAFFIC: _<br />
+        NONTRAFFIC: _<br />
+        MISDEMEANOR: _<br />
+        ____________________________________________________<br /><br />
 
-      Date of Violation: 00 / 00 / 00<br />
-      Time: 00 : 00 am / pm EST<br />
-      Day of the week:<br />
-      ____________________________________________________<br /><br />
+        Date of Violation: 00 / 00 / 00<br />
+        Time: 00 : 00 am / pm EST<br />
+        Day of the week:<br />
+        ____________________________________________________<br /><br />
 
-      Name (First, Middle, Last):<br />
-      Address:<br />
-      City:<br />
-      State:<br />
-      Zip Code:<br />
-      ____________________________________________________<br /><br />
+        Name (First, Middle, Last):<br />
+        Address:<br />
+        City:<br />
+        State:<br />
+        Zip Code:<br />
+        ____________________________________________________<br /><br />
 
-      Driver Lic. Number:<br />
-      Class:<br />
-      Commercial:<br />
-      Age:<br />
-      D.O.B: 00 / 00 / 00<br />
-      ____________________________________________________<br /><br />
+        Driver Lic. Number:<br />
+        Class:<br />
+        Commercial:<br />
+        Age:<br />
+        D.O.B: 00 / 00 / 00<br />
+        ____________________________________________________<br /><br />
 
-      Veh. Lic. No. or VIN:<br />
-      State:<br />
-      Yr. of Veh.:<br />
-      Make:<br />
-      Model:<br />
-      Color:<br />
+        Veh. Lic. No. or VIN:<br />
+        State:<br />
+        Yr. of Veh.:<br />
+        Make:<br />
+        Model:<br />
+        Color:<br />
 
-      Registered owner or Lessee:<br />
-      Address:<br />
-      ____________________________________________________<br /><br />
+        Registered owner or Lessee:<br />
+        Address:<br />
+        ____________________________________________________<br /><br />
 
-      Correctable Violation: Yes/No<br />
-      Code and Section:<br />
-      Description:<br />
-      Booking Required:<br />
-      Misdemeanor or Infraction: M or I<br />
-      ____________________________________________________<br /><br />
+        Correctable Violation: Yes/No<br />
+        Code and Section:<br />
+        Description:<br />
+        Booking Required:<br />
+        Misdemeanor or Infraction: M or I<br />
+        ____________________________________________________<br /><br />
 
-      Approx Speed:<br />
-      Speed Limit:<br />
-      ____________________________________________________<br /><br />
+        Approx Speed:<br />
+        Speed Limit:<br />
+        ____________________________________________________<br /><br />
 
-      Location of Violations:<br />
-      ____________________________________________________<br /><br />
+        Location of Violations:<br />
+        ____________________________________________________<br /><br />
 
-      I declare under penalty of perjury under the laws of the State of California the foregoing is true and
-      correct.<br /><br />
+        I declare under penalty of perjury under the laws of the State of California the foregoing is true and
+        correct.<br /><br />
 
-      DIV: 00 - AREA NAME<br /><br />
+        DIV: 00 - AREA NAME<br /><br />
 
-      Arresting or Citing Officer: [RANK], [NAME]<br />
-      _____________________________________________________ <br /><br />
+        Arresting or Citing Officer: [RANK], [NAME]<br />
+        _____________________________________________________ <br /><br />
 
-      WITHOUT ADMITTING GUILT, I PROMISE TO APPEAR AT THE TIME AND PLACE INDICATED BELOW.<br /><br />
-      (Name of person)<br /><br />
+        WITHOUT ADMITTING GUILT, I PROMISE TO APPEAR AT THE TIME AND PLACE INDICATED BELOW.<br /><br />
+        (Name of person)<br /><br />
 
-      WHAT TO DO: If you would like to fight this make a traffic court ticket in the judicial email. If not,
-      ignore.<br /><br />
+        WHAT TO DO: If you would like to fight this make a traffic court ticket in the judicial email. If not,
+        ignore.<br /><br />
 
-      WHERE: Los Angeles District Court - 640 Carcer Way - https://discord.gg/b48BBu6uHu<br />
-      _____________________________________________________ <br /><br />
+        WHERE: Los Angeles District Court - 640 Carcer Way - https://discord.gg/b48BBu6uHu<br />
+        _____________________________________________________ <br /><br />
 
-      Judicial Council of California Form<br />
-      Rev. 09-20-05 (Veh. Code, §§ 40500(b), 40513(b), 40522, 40600; Pen. Code, § 853.9)<br />
-      SEE REVERSE<br />
-      TR-130<br />
-      _________________________ REVERSE SIDE _________________________<br /><br />
+        Judicial Council of California Form<br />
+        Rev. 09-20-05 (Veh. Code, §§ 40500(b), 40513(b), 40522, 40600; Pen. Code, § 853.9)<br />
+        SEE REVERSE<br />
+        TR-130<br />
+        _________________________ REVERSE SIDE _________________________<br /><br />
 
-      IMPORTANT — READ CAREFULLY<br /><br />
+        IMPORTANT — READ CAREFULLY<br /><br />
 
-      WARNING: If you fail to appear in court as you have promised, you may be arrested and punished by 6 MONTHS IN JAIL
-      AND/OR A $1,000 FINE regardless of the disposition of the original charge. (Veh. Code, § 40508 or Pen. Code, §
-      853.7.) In addition, any person who fails to appear as provided by law may be deemed to have elected to have a
-      trial by written declaration (in absentia) pursuant to Vehicle Code section 40903(a) upon any alleged infraction,
-      as charged by the arresting/citing officer.<br /><br />
+        WARNING: If you fail to appear in court as you have promised, you may be arrested and punished by 6 MONTHS IN JAIL
+        AND/OR A $1,000 FINE regardless of the disposition of the original charge. (Veh. Code, § 40508 or Pen. Code, §
+        853.7.) In addition, any person who fails to appear as provided by law may be deemed to have elected to have a
+        trial by written declaration (in absentia) pursuant to Vehicle Code section 40903(a) upon any alleged infraction,
+        as charged by the arresting/citing officer.<br /><br />
 
-      JUVENILE: If you were under age 18 at the time the citation was issued, you must appear in court with your parent
-      or guardian.<br /><br />
+        JUVENILE: If you were under age 18 at the time the citation was issued, you must appear in court with your parent
+        or guardian.<br /><br />
 
-      COURTESY NOTICE: A courtesy notice may be mailed to the address shown on your citation, indicating the required
-      deposit of money (bail) that may be forfeited instead of your appearing in court. If you do not receive such
-      courtesy notice, you are still required to comply with the items below by the appearance date.<br /><br />
+        COURTESY NOTICE: A courtesy notice may be mailed to the address shown on your citation, indicating the required
+        deposit of money (bail) that may be forfeited instead of your appearing in court. If you do not receive such
+        courtesy notice, you are still required to comply with the items below by the appearance date.<br /><br />
 
-      WHAT TO DO<br />
-      You are required to appear at court for a misdemeanor violation. For all violations, your court date/time/place
-      are on the front of this notice to appear. Have the citation with you when contacting the court. In all infraction
-      cases, you must do one or more of the following for each violation:<br /><br />
+        WHAT TO DO<br />
+        You are required to appear at court for a misdemeanor violation. For all violations, your court date/time/place
+        are on the front of this notice to appear. Have the citation with you when contacting the court. In all infraction
+        cases, you must do one or more of the following for each violation:<br /><br />
 
-      - Pay the fine (Bail).<br />
-      - Appear in court.<br />
-      - Contest the violation.<br />
-      - Correct the violation (traffic cases, when applicable).<br />
-      - Request traffic school (traffic cases, when applicable).<br />
-      - Request trial by written declaration (traffic cases).<br /><br />
+        - Pay the fine (Bail).<br />
+        - Appear in court.<br />
+        - Contest the violation.<br />
+        - Correct the violation (traffic cases, when applicable).<br />
+        - Request traffic school (traffic cases, when applicable).<br />
+        - Request trial by written declaration (traffic cases).<br /><br />
 
-      If you do not do one of the above actions, then a "failure to appear" charge will be filed against you (Veh. Code,
-      § 40508(a)) and your driver license may be withheld, suspended, or revoked. In some courts, you may be charged an
-      amount in addition to the bail amount and the case may be turned over to a collection agency. (Pen. Code, §
-      1214.1.)<br /><br />
+        If you do not do one of the above actions, then a "failure to appear" charge will be filed against you (Veh. Code,
+        § 40508(a)) and your driver license may be withheld, suspended, or revoked. In some courts, you may be charged an
+        amount in addition to the bail amount and the case may be turned over to a collection agency. (Pen. Code, §
+        1214.1.)<br /><br />
 
-      1. If you do NOT contest the violation:<br /><br />
+        1. If you do NOT contest the violation:<br /><br />
 
-      a. (Pay the bail amount) Contact the court for bail information. You will not have to appear in court. You will be
-      convicted of the violation, and it will appear on your record at the Department of Motor Vehicles (DMV). A point
-      count may be charged to your DMV record, and your insurance may be adversely affected.<br /><br />
+        a. (Pay the bail amount) Contact the court for bail information. You will not have to appear in court. You will be
+        convicted of the violation, and it will appear on your record at the Department of Motor Vehicles (DMV). A point
+        count may be charged to your DMV record, and your insurance may be adversely affected.<br /><br />
 
-      b. (Traffic school) You may be able to avoid the point count by completing traffic school. You must pay the bail
-      amount as a fee, and you may have to pay other fees. Contact the court to request traffic school.<br /><br />
+        b. (Traffic school) You may be able to avoid the point count by completing traffic school. You must pay the bail
+        amount as a fee, and you may have to pay other fees. Contact the court to request traffic school.<br /><br />
 
-      c. (Correctable violations) If the "Yes" box is checked on the front of your ticket, the violation is correctable.
-      Upon correction of the violation, have a law enforcement officer or an authorized inspection/installation station
-      sign below. (Veh. Code, § 40610.) Registration and driver license violations may also be certified as corrected at
-      an office of the DMV or by any clerk or deputy clerk of a court. The violation will be dismissed by the court
-      after PROOF OF CORRECTION and payment of a transaction fee are presented to the court by mail or in person by the
-      appearance date. Violations under Vehicle Code section 16028 (automobile liability insurance) will be dismissed
-      only upon (1) your showing or mailing to the court evidence of financial responsibility valid at the time the
-      notice to appear was issued, and (2) your payment of a transaction fee.<br /><br />
+        c. (Correctable violations) If the "Yes" box is checked on the front of your ticket, the violation is correctable.
+        Upon correction of the violation, have a law enforcement officer or an authorized inspection/installation station
+        sign below. (Veh. Code, § 40610.) Registration and driver license violations may also be certified as corrected at
+        an office of the DMV or by any clerk or deputy clerk of a court. The violation will be dismissed by the court
+        after PROOF OF CORRECTION and payment of a transaction fee are presented to the court by mail or in person by the
+        appearance date. Violations under Vehicle Code section 16028 (automobile liability insurance) will be dismissed
+        only upon (1) your showing or mailing to the court evidence of financial responsibility valid at the time the
+        notice to appear was issued, and (2) your payment of a transaction fee.<br /><br />
 
-      CERTIFICATE OF CORRECTION (MUST BE RETURNED TO COURT)<br /><br />
+        CERTIFICATE OF CORRECTION (MUST BE RETURNED TO COURT)<br /><br />
 
-      Section(s) Violated:<br />
-      Signature of Person Certifying Correction:<br />
-      Serial No.:<br />
-      Agency:<br />
-      Date:<br /><br />
+        Section(s) Violated:<br />
+        Signature of Person Certifying Correction:<br />
+        Serial No.:<br />
+        Agency:<br />
+        Date:<br /><br />
 
-      2. If you contest the violation (select a or b):<br /><br />
+        2. If you contest the violation (select a or b):<br /><br />
 
-      a. (Court trial) Send a written request or a check or letter postmarked not later than five days prior to the
-      appearance date on your citation or by the appearance date to request a court trial on a future date.<br /><br />
+        a. (Court trial) Send a written request or a check or letter postmarked not later than five days prior to the
+        appearance date on your citation or by the appearance date to request a court trial on a future date.<br /><br />
 
-      b. (Trial by written declaration (traffic infractions)) Send a certified or registered letter postmarked not later
-      than five days prior to the appearance date or come to the court on or before the appearance date to request a
-      trial by written declaration. Submit the bail amount. You will be given forms to allow you to write a statement
-      and to submit other evidence without appearing in court. An officer will also submit a statement. The judicial
-      officer will consider the evidence and decide the case.<br /><br />
+        b. (Trial by written declaration (traffic infractions)) Send a certified or registered letter postmarked not later
+        than five days prior to the appearance date or come to the court on or before the appearance date to request a
+        trial by written declaration. Submit the bail amount. You will be given forms to allow you to write a statement
+        and to submit other evidence without appearing in court. An officer will also submit a statement. The judicial
+        officer will consider the evidence and decide the case.<br /><br />
 
-      Make check/money order payable to Clerk of the Court. Write your citation number and driver license number on your
-      check or money order. You may pay in person, by mail, or by phone.<br /><br />
+        Make check/money order payable to Clerk of the Court. Write your citation number and driver license number on your
+        check or money order. You may pay in person, by mail, or by phone.<br /><br />
 
-      If “Booking Required” is checked, you must appear for booking on a weekday prior to your court date at:
-      ________________ between the hours of ___ and ___, and bring the signed verification to your court appearance.
-      Call ________________ for more information.<br /><br />
+        If "Booking Required" is checked, you must appear for booking on a weekday prior to your court date at:
+        ________________ between the hours of ___ and ___, and bring the signed verification to your court appearance.
+        Call ________________ for more information.<br /><br />
 
-      Booking Verification: I declare under penalty of perjury under the laws of the State of California that
-      ________________ was booked on ________<br /><br />
+        Booking Verification: I declare under penalty of perjury under the laws of the State of California that
+        ________________ was booked on ________<br /><br />
 
-      Defendant’s name:<br />
-      Date:<br />
-      Officer:<br />
-      Serial No.:<br /><br />
+        Defendant's name:<br />
+        Date:<br />
+        Officer:<br />
+        Serial No.:<br /><br />
 
-      Additional information is available at the LAPD Discord: https://discord.gg/7cAasMhaRP<br />
-      _____________________________________________________<br /><br />
+        Additional information is available at the LAPD Discord: https://discord.gg/7cAasMhaRP<br />
+        _____________________________________________________<br /><br />
 
-      Narrative:<br />
-    </p>
+        Narrative:<br />
+      </p>
+    </div>
   </div>
-  <div style="
-    margin-left: 500px;
-    margin-right: 500px;
-    font-family: serif;
-    text-align: left;
-    border: 1px solid black;
-    padding: 2em;
-    box-shadow: 4px 8px #888888;
-    margin-bottom: 20px;
-  ">
-    <p style="text-align: top">
-      <strong>LAPD Written Warning</strong><br />
-      <hr />
-      </strong><br />
-    </p>
+  
+  <!-- Warning Report -->
+  <div class="report-container" style="margin-left: 500px; margin-right: 500px;">
+    <div class="btn-container">
+      <button class="copy-btn" data-report="warning">Copy Warning Form</button>
+      <span class="copy-success" id="warning-success">Copied!</span>
+    </div>
+    <div id="warning-report" style="
+      font-family: serif;
+      text-align: left;
+      border: 1px solid black;
+      padding: 2em;
+      box-shadow: 4px 8px #888888;
+      margin-bottom: 20px;
+    ">
+      <p style="text-align: top">
+        <strong>LAPD Written Warning</strong><br />
+        <hr />
+        </strong><br />
+      </p>
 
-    <p>
-      LOS ANGELES POLICE DEPARTMENT<br />
-      CITY OF LOS ANGELES<br />
-      TRAFFIC VIOLATION WARNING<br />
-      ____________________________________________________<br /><br />
+      <p>
+        LOS ANGELES POLICE DEPARTMENT<br />
+        CITY OF LOS ANGELES<br />
+        TRAFFIC VIOLATION WARNING<br />
+        ____________________________________________________<br /><br />
 
-      PEDESTRIAN: _<br />
-      BICYCLE: _<br />
-      VEHICLE: _<br />
-      ____________________________________________________<br /><br />
+        PEDESTRIAN: _<br />
+        BICYCLE: _<br />
+        VEHICLE: _<br />
+        ____________________________________________________<br /><br />
 
-      Date: 00 / 00 / 00<br />
-      Time: 00 : 00<br />
-      Day of the week:<br />
-      ____________________________________________________<br /><br />
+        Date: 00 / 00 / 00<br />
+        Time: 00 : 00<br />
+        Day of the week:<br />
+        ____________________________________________________<br /><br />
 
-      Name (First, Middle, Last):<br />
-      Address:<br />
-      City:<br />
-      State:<br />
-      ____________________________________________________<br /><br />
+        Name (First, Middle, Last):<br />
+        Address:<br />
+        City:<br />
+        State:<br />
+        ____________________________________________________<br /><br />
 
-      Parent's Name (Juvenile):<br />
-      Address:<br />
-      ____________________________________________________<br /><br />
+        Parent's Name (Juvenile):<br />
+        Address:<br />
+        ____________________________________________________<br /><br />
 
-      Driver License Number:<br />
-      State:<br />
-      ____________________________________________________<br /><br />
+        Driver License Number:<br />
+        State:<br />
+        ____________________________________________________<br /><br />
 
-      Sex:<br />
-      Hair:<br />
-      Eyes:<br />
-      Height:<br />
-      Weight:<br />
-      Desc:<br />
-      Birth Date: 00 / 00 / 00<br />
-      ____________________________________________________<br /><br />
+        Sex:<br />
+        Hair:<br />
+        Eyes:<br />
+        Height:<br />
+        Weight:<br />
+        Desc:<br />
+        Birth Date: 00 / 00 / 00<br />
+        ____________________________________________________<br /><br />
 
-      Vehicle License Number:<br />
-      State:<br />
-      Year:<br />
-      Make:<br />
-      Model:<br />
-      Color:<br />
-      ____________________________________________________<br /><br />
+        Vehicle License Number:<br />
+        State:<br />
+        Year:<br />
+        Make:<br />
+        Model:<br />
+        Color:<br />
+        ____________________________________________________<br /><br />
 
-      VIOLATION:<br />
-      CODE:<br />
-      SECTION DESCRIPTION:<br />
-      ____________________________________________________<br /><br />
+        VIOLATION:<br />
+        CODE:<br />
+        SECTION DESCRIPTION:<br />
+        ____________________________________________________<br /><br />
 
-      Location of Violation:<br />
-      ____________________________________________________<br /><br />
+        Location of Violation:<br />
+        ____________________________________________________<br /><br />
 
-      Officer:<br />
-      Serial No.:<br />
-      Unit/Division:<br />
-      RD:<br />
-      ____________________________________________________<br /><br />
+        Officer:<br />
+        Serial No.:<br />
+        Unit/Division:<br />
+        RD:<br />
+        ____________________________________________________<br /><br />
 
-      THIS WARNING HAS BEEN ISSUED TO YOU FOR A VIOLATION OF THE ABOVE LISTED CALIFORNIA VEHICLE CODE SECTION. THIS IS
-      AN OFFICIAL WARNING ONLY BY THE LOS ANGELES POLICE DEPARTMENT. NO PENALTY WILL BE ASSESSED AND THIS VIOLATION WILL
-      NOT BECOME PART OF YOUR OFFICIAL DRIVING RECORD.<br /><br />
+        THIS WARNING HAS BEEN ISSUED TO YOU FOR A VIOLATION OF THE ABOVE LISTED CALIFORNIA VEHICLE CODE SECTION. THIS IS
+        AN OFFICIAL WARNING ONLY BY THE LOS ANGELES POLICE DEPARTMENT. NO PENALTY WILL BE ASSESSED AND THIS VIOLATION WILL
+        NOT BECOME PART OF YOUR OFFICIAL DRIVING RECORD.<br /><br />
 
-      THE OFFICER WHO ISSUED THIS CITATION HAS ELECTED TO WARN YOU FOR THE OBSERVED VIOLATION OF THE CALIFORNIA VEHICLE
-      CODE. THE LOS ANGELES POLICE DEPARTMENT STRIVES TO CREATE A SAFER ENVIRONMENT FOR CITIZENS AND VISITORS TO THE
-      CITY. THE PRACTICE OF SAFE DRIVING /PEDESTRIAN /BICYCLING HABITS WILL HELP TO REDUCE THE INCIDENTS OF TRAFFIC
-      COLLISIONS IN OUR COMMUNITY. WE WOULD APPRECIATE YOUR COOPERATION IN ACHIEVING THIS GOAL.<br /><br />
+        THE OFFICER WHO ISSUED THIS CITATION HAS ELECTED TO WARN YOU FOR THE OBSERVED VIOLATION OF THE CALIFORNIA VEHICLE
+        CODE. THE LOS ANGELES POLICE DEPARTMENT STRIVES TO CREATE A SAFER ENVIRONMENT FOR CITIZENS AND VISITORS TO THE
+        CITY. THE PRACTICE OF SAFE DRIVING /PEDESTRIAN /BICYCLING HABITS WILL HELP TO REDUCE THE INCIDENTS OF TRAFFIC
+        COLLISIONS IN OUR COMMUNITY. WE WOULD APPRECIATE YOUR COOPERATION IN ACHIEVING THIS GOAL.<br /><br />
 
-      X SIGNATURE (VOLUNTARY):<br /><br />
+        X SIGNATURE (VOLUNTARY):<br /><br />
 
-      TRAFFIC VIOLATION WARNING VIOLATOR COPY (WHITE)<br />
-      FORM 04.40.00<br />
-      (03114) See reverse side of notice for further information.<br /><br />
+        TRAFFIC VIOLATION WARNING VIOLATOR COPY (WHITE)<br />
+        FORM 04.40.00<br />
+        (03114) See reverse side of notice for further information.<br /><br />
 
-      _________________________ REVERSE SIDE _________________________<br /><br />
+        _________________________ REVERSE SIDE _________________________<br /><br />
 
-      THE MESSAGE IS SIMPLE:<br /><br />
+        THE MESSAGE IS SIMPLE:<br /><br />
 
-      - Lock It: Always lock your vehicle when unattended and secure valuables in the trunk.<br />
-      - Hide It: If your car doesn't have a trunk, store valuables under the seats, in the glove box, or other
-      compartments.<br />
-      - Keep It: Taking personal responsibility is the best way to protect your property and prevent theft.<br /><br />
+        - Lock It: Always lock your vehicle when unattended and secure valuables in the trunk.<br />
+        - Hide It: If your car doesn't have a trunk, store valuables under the seats, in the glove box, or other
+        compartments.<br />
+        - Keep It: Taking personal responsibility is the best way to protect your property and prevent theft.<br /><br />
 
-      TIPS TO AVOID BECOMING A VICTIM:<br /><br />
+        TIPS TO AVOID BECOMING A VICTIM:<br /><br />
 
-      - Fully close all windows.<br />
-      - Never leave your vehicle running unattended.<br />
-      - Use a steering wheel lock.<br />
-      - Remove all valuables and store shopping bags in the trunk.<br />
-      - Keep GPS devices, iPads, iPods, laptops, and other electronics out of sight.<br />
-      - Park in well-lit areas and avoid isolated spots.<br />
-      - Install a car alarm system.<br />
-      - Mark your portable electronics with your driver's license or ID number.<br />
-      - Keep your license plate and Vehicle Identification Number (VIN) recorded in your wallet, purse, or
-      phone.<br /><br />
+        - Fully close all windows.<br />
+        - Never leave your vehicle running unattended.<br />
+        - Use a steering wheel lock.<br />
+        - Remove all valuables and store shopping bags in the trunk.<br />
+        - Keep GPS devices, iPads, iPods, laptops, and other electronics out of sight.<br />
+        - Park in well-lit areas and avoid isolated spots.<br />
+        - Install a car alarm system.<br />
+        - Mark your portable electronics with your driver's license or ID number.<br />
+        - Keep your license plate and Vehicle Identification Number (VIN) recorded in your wallet, purse, or
+        phone.<br /><br />
 
-      TRAFFIC TIPS FOR MOTORISTS:<br /><br />
+        TRAFFIC TIPS FOR MOTORISTS:<br /><br />
 
-      - Ensure oncoming traffic is clear before making a left turn.<br />
-      - Always wear a seatbelt to prevent serious injuries or fatalities.<br />
-      - Pull over to the right when emergency vehicles approach with lights and sirens. Do not stop in the middle of the
-      roadway.<br />
-      - Check that crosswalks are clear before turning.<br />
-      - Avoid using a cell phone while driving.<br /><br />
+        - Ensure oncoming traffic is clear before making a left turn.<br />
+        - Always wear a seatbelt to prevent serious injuries or fatalities.<br />
+        - Pull over to the right when emergency vehicles approach with lights and sirens. Do not stop in the middle of the
+        roadway.<br />
+        - Check that crosswalks are clear before turning.<br />
+        - Avoid using a cell phone while driving.<br /><br />
 
-      TIPS FOR PEDESTRIANS:<br /><br />
+        TIPS FOR PEDESTRIANS:<br /><br />
 
-      - Look in all directions, including behind, before crossing the street.<br />
-      - Do not enter a crosswalk when the signal is red or flashing.<br />
-      - Never jaywalk—always cross at designated crosswalks.<br />
-      - Use caution when crossing—do not assume you have the right of way.<br /><br />
+        - Look in all directions, including behind, before crossing the street.<br />
+        - Do not enter a crosswalk when the signal is red or flashing.<br />
+        - Never jaywalk—always cross at designated crosswalks.<br />
+        - Use caution when crossing—do not assume you have the right of way.<br /><br />
 
-      TIPS FOR BICYCLISTS:<br /><br />
+        TIPS FOR BICYCLISTS:<br /><br />
 
-      - Wear reflective clothing and protective gear (helmet, eye protection, etc.).<br />
-      - Riding on sidewalks makes you less visible to cars.<br />
-      - Obey all traffic laws, including signs and signals.<br />
-      - Walk your bicycle when using a crosswalk.<br /><br />
+        - Wear reflective clothing and protective gear (helmet, eye protection, etc.).<br />
+        - Riding on sidewalks makes you less visible to cars.<br />
+        - Obey all traffic laws, including signs and signals.<br />
+        - Walk your bicycle when using a crosswalk.<br /><br />
 
-      STAY UPDATED WITH THE LAPD:<br /><br />
+        STAY UPDATED WITH THE LAPD:<br /><br />
 
-      - Follow us on Birdy: @LAPDHQ<br />
-      - Join the LAPD Discord: https://discord.gg/7cAasMhaRP<br />
+        - Follow us on Birdy: @LAPDHQ<br />
+        - Join the LAPD Discord: https://discord.gg/7cAasMhaRP<br />
 
-      ____________________________________________________<br /><br />
+        ____________________________________________________<br /><br />
 
-      Narrative:<br />
-    </p>
+        Narrative:<br />
+      </p>
+    </div>
   </div>
+  
   <div class="footer" align="center">
     <a id="github" href="https://github.com/realendie/MSRP-LAPD-Officer-Hub"
       style="color: green; text-decoration: none; align-self: center;" target="_blank">github</a>
     <a id="email" href="mailto:enderprooffical@gmail.com"
       style="color: green; text-decoration: none; align-self: center;" target="_blank">email me</a>
   </div>
+
+  <script>
+    // Add copy functionality to all buttons
+    document.querySelectorAll('.copy-btn').forEach(button => {
+        button.addEventListener('click', function () {
+            // Get the report ID from the button's data attribute
+            const reportId = this.getAttribute('data-report');
+
+            // Find the corresponding report content
+            const reportContent = document.getElementById(`${reportId}-report`).innerText;
+
+            // Create a temporary textarea to copy the content
+            const textarea = document.createElement('textarea');
+            textarea.value = reportContent;
+            document.body.appendChild(textarea);
+            textarea.select();
+
+            try {
+                // Execute the copy command
+                document.execCommand('copy');
+
+                // Show success message
+                const successMessage = document.getElementById(`${reportId}-success`);
+                successMessage.style.opacity = '1';
+
+                // Hide success message after 2 seconds
+                setTimeout(() => {
+                    successMessage.style.opacity = '0';
+                }, 2000);
+
+            } catch (err) {
+                console.error('Failed to copy text: ', err);
+            }
+
+            // Remove the temporary textarea
+            document.body.removeChild(textarea);
+        });
+    });
+  </script>
 </body>
 
 </html>
