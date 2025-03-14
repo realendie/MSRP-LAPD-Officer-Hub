@@ -74,9 +74,15 @@ RD:
 ____________________________________________________  
 
 Clothing Worn:  
-____________________________________________________  
+____________________________________________________
+05.02.00 
 
-CONTINUATION SHEET  
+CONTINUATION SHEET
+
+Page No. 2/6
+TYPE OF REPORT:
+BOOKING NO.: 
+DR NO.:
 
 Suspect #1:  
 DOB:  
@@ -105,5 +111,59 @@ Property Stolen/ Recovered:
 Court information:
 ____________________________________________________  
 
-Signed:  
-[RANK], [NAME]  
+PAGE 3/3
+
+LOS ANGELES POLICE DEPARTMENT
+RECEIPT FOR PROPERTY TAKEN INTO CUSTODY
+*SAVE THIS RECEIPT*
+____________________________________________________  
+
+DATE:
+TIME:
+DR NUMBER:
+____________________________________________________ 
+
+LOCATION PROPERTY TAKEN INTO CUSTODY:
+____________________________________________________ 
+
+NAME OF PERSON IN POSSESSION OF PROPERTY (LAST, FIRST, MI):
+
+ADDRESS:
+STREET:
+CITY:
+ZIP:
+____________________________________________________
+
+BOOKING NUMBER:
+CHARGE:
+
+DL OR OTHER ID NO.:
+OTHER IDENTIFYING INFORMATION:
+ITEM NUMBERS ON PROPERTY REPORT:
+____________________________________________________
+
+PROPERTY TAKEN - DESCRIPTION
+
+GIVE EXACT AMMOUNT OF CASH $:
+
+QUAN:
+ARTICLE:
+SERIAL NO.:
+BRAND:
+MODEL NO.:
+MISC, COLOR, SIZE, INCRIPTION, CALIBER, ETC.:
+____________________________________________________
+
+PROPERTY BOOKED TO - SAME AS POSSESSOR []:
+
+DIVISION OF BOOKING:
+SIGNATURE OF OFFICER ISSUING:
+SERIAL NUMBER:
+DIVISION:
+DETAIL:
+
+THIS RECEIPT DOES NOT CONSTITUTE RECOGNITION OF LEGAL TITLE TO ABOVE PROPERTY
+____________________________________________________
+
+SIGNATURE OF PERSON IN POSSESSION OF PROPERTY (OPTIONAL)
+____________________________________________________
