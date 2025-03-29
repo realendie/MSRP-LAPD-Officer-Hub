@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MSRP | LAPD Officer Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Assets\Images\LAPDseal.ico" type="image/x-icon" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#reportHeader").load("report_header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="reportHeader"></div>
+
+    <!-- Arrest Report -->
+    <div class="report-container" style="margin-left: 500px; margin-right: 500px;">
+        <div class="btn-container">
+            <button class="copy-btn" data-report="arrest">Copy Tow Report</button>
+            <span class="copy-success" id="arrest-success">Copied!</span>
+        </div>
+        <div id="arrest-report" style="
+        font-family: serif;
+        text-align: left;
+        border: 1px solid black;
+        padding: 2em;
+        box-shadow: 4px 8px #888888;
+        margin-bottom: 20px;
+      ">
+            <p style="text-align: top">
+                <strong>CHP 180 Form / Tow Report<br />
+                    <hr />
+                </strong><br />
+            </p>
+
+            <p id="details-section">
+                STATE OF CALIFORNIA<br />
+                DEPARTMENT OF CALIFORNIA HIGHWAY PATROL<br />
+                VEHICLE REPORT<br />
+                CHP 180<br />
+                ____________________________________________________<br /><br />
+
+                Reporting Department: Los Angeles Police Department<br />
+                Date of Report:<br />
+                Time of Report:<br />
+                ____________________________________________________<br /><br />
+
+                Notice of Stored Vehicle Delivered Personally: Yes / No<br />
+                ____________________________________________________<br /><br />
+
+                Location Towed From:<br />
+                Plate In State: Yes / No<br />
+                ____________________________________________________<br /><br />
+
+                Vehicle Year:<br />
+                Vehicle Make:<br />
+                Vehicle Model:<br />
+                Vehicle Color:<br />
+                Vehicle License No.:<br />
+                ____________________________________________________<br /><br />
+
+                Registered Owner:<br />
+                ____________________________________________________<br /><br />
+
+                _ Stored _ Impounded _ Released<br />
+                ____________________________________________________<br /><br />
+
+                Towing To / Stored At: Los Angeles Police Department Impound Lot<br />
+                Vehicle Drivable: Yes / No<br />
+                ____________________________________________________<br /><br />
+
+                Condition:<br />
+                Items Found:<br />
+                ____________________________________________________<br /><br />
+
+                Release Vehicle To: Agency Hold / CVC 22850.3<br />
+                Name of Person / Agency Authorizing Release:<br />
+                Signature of Person Authorizing Release:<br />
+                ____________________________________________________<br /><br />
+
+                Stolen Vehicle: Yes / No<br />
+                Embezzled Vehicle: Yes / No<br />
+                ____________________________________________________<br /><br />
+
+                Date of Occurrence:<br />
+                Time of Occurrence:<br />
+                ____________________________________________________<br /><br />
+
+                Date Reported:<br />
+                Time Reported:<br />
+                Name of Reporting Party:<br />
+                ____________________________________________________<br /><br />
+
+                Last Driver of Vehicle:<br />
+                Date Last Driven:<br />
+                Time Last Driven:<br />
+                Address of R/P:<br />
+                ____________________________________________________<br /><br />
+
+            </p>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="copyButtons.js"></script>
+</body>
+
+</html>
