@@ -4,44 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MSRP | LAPD Officer Hub | Incidents</title>
+  <title>MSRP | LAPD Officer Hub</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .copy-btn {
-      background-color: green;
-      color: white;
-      border: none;
-      padding: 8px 15px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-weight: bold;
-      margin-top: 10px;
-      transition: background-color 0.3s;
-    }
-
-    .copy-btn:hover {
-      background-color: darkgreen;
-    }
-
-    .copy-success {
-      color: green;
-      font-weight: bold;
-      margin-left: 10px;
-      opacity: 0;
-      transition: opacity 0.5s;
-    }
-
-    .report-container {
-      position: relative;
-    }
-
-    .btn-container {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      margin-bottom: 10px;
-    }
-  </style>
+  <link rel="icon" href="Assets\Images\LAPDseal.ico" type="image/x-icon" />
 </head>
 
 <body>
@@ -1119,44 +1084,7 @@
       style="color: green; text-decoration: none; align-self: center;" target="_blank">email me</a>
   </div>
 
-  <script>
-    // Add copy functionality to all buttons
-    document.querySelectorAll('.copy-btn').forEach(button => {
-      button.addEventListener('click', function () {
-        // Get the report ID from the button's data attribute
-        const reportId = this.getAttribute('data-report');
-
-        // Find the corresponding report content
-        const reportContent = document.getElementById(`${reportId}-report`).innerText;
-
-        // Create a temporary textarea to copy the content
-        const textarea = document.createElement('textarea');
-        textarea.value = reportContent;
-        document.body.appendChild(textarea);
-        textarea.select();
-
-        try {
-          // Execute the copy command
-          document.execCommand('copy');
-
-          // Show success message
-          const successMessage = document.getElementById(`${reportId}-success`);
-          successMessage.style.opacity = '1';
-
-          // Hide success message after 2 seconds
-          setTimeout(() => {
-            successMessage.style.opacity = '0';
-          }, 2000);
-
-        } catch (err) {
-          console.error('Failed to copy text: ', err);
-        }
-
-        // Remove the temporary textarea
-        document.body.removeChild(textarea);
-      });
-    });
-  </script>
+  <script src="copyButtons.js"></script>
 </body>
 
 </html>

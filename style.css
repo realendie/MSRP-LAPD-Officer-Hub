@@ -8,3 +8,37 @@ p{
 li{
     color: whitesmoke;
 }
+.copy-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
+
+  .copy-btn:hover {
+    background-color: darkgreen;
+  }
+
+  .copy-success {
+    color: green;
+    font-weight: bold;
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .report-container {
+    position: relative;
+  }
+
+  .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
