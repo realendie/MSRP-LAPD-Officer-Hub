@@ -1,4 +1,5 @@
 # MSRP LAPD Officer Hub
+[![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://shields.io/)
 
 The LAPD Officer Hub serves as your one stop shop for all resources you might need while on duty as an LAPD Officer.
 
