@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MSRP | LAPD Officer Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Assets\Images\LAPDseal.ico" type="image/x-icon" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#reportHeader").load("report_header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="reportHeader"></div>
+
+    <!-- Arrest Report -->
+    <div class="report-container" style="margin-left: 500px; margin-right: 500px;">
+        <div class="btn-container">
+            <button class="copy-btn" data-report="arrest">Copy Tow Report</button>
+            <span class="copy-success" id="arrest-success">Copied!</span>
+        </div>
+        <div id="tow-report" style="
+        font-family: serif;
+        text-align: left;
+        border: 1px solid black;
+        padding: 2em;
+        box-shadow: 4px 8px #888888;
+        margin-bottom: 20px;
+      ">
+            <p style="text-align: top">
+                <strong>CHP 180 Form / Tow Report<br />
+                    <hr />
+                </strong><br />
+            </p>
+
+            <p id="details-section">
+                STATE OF CALIFORNIA<br />
+                DEPARTMENT OF CALIFORNIA HIGHWAY PATROL<br />
+                VEHICLE REPORT<br />
+                CHP 180<br />
+                ____________________________________________________<br /><br />
+
+                Reporting Department: Los Angeles Police Department<br />
+                Date of Report:<br />
+                Time of Report:<br />
+                ____________________________________________________<br /><br />
+
+                Notice of Stored Vehicle Delivered Personally: Yes / No<br />
+                ____________________________________________________<br /><br />
+
+                Location Towed From:<br />
+                Plate In State: Yes / No<br />
+                ____________________________________________________<br /><br />
+
+                Vehicle Year:<br />
+                Vehicle Make:<br />
+                Vehicle Model:<br />
+                Vehicle Color:<br />
+                Vehicle License No.:<br />
+                ____________________________________________________<br /><br />
+
+                Registered Owner:<br />
+                ____________________________________________________<br /><br />
+
+                _ Stored _ Impounded _ Released<br />
+                ____________________________________________________<br /><br />
+
+                Towing To / Stored At: Los Angeles Police Department Impound Lot<br />
+                Vehicle Drivable: Yes / No<br />
+                ____________________________________________________<br /><br />
+
+                Condition:<br />
+                Items Found:<br />
+                ____________________________________________________<br /><br />
+
+                Release Vehicle To: Agency Hold / CVC 22850.3<br />
+                Name of Person / Agency Authorizing Release:<br />
+                Signature of Person Authorizing Release:<br />
+                ____________________________________________________<br /><br />
+
+                Stolen Vehicle: Yes / No<br />
+                Embezzled Vehicle: Yes / No<br />
+                ____________________________________________________<br /><br />
+
+                Date of Occurrence:<br />
+                Time of Occurrence:<br />
+                ____________________________________________________<br /><br />
+
+                Date Reported:<br />
+                Time Reported:<br />
+                Name of Reporting Party:<br />
+                ____________________________________________________<br /><br />
+
+                Last Driver of Vehicle:<br />
+                Date Last Driven:<br />
+                Time Last Driven:<br />
+                Address of R/P:<br />
+                ____________________________________________________<br /><br />
+
+            </p>
+        </div>
+    </div>
+
+    <div class="report-container" style="margin-left: 500px; margin-right: 500px;">
+        <div class="btn-container">
+            <button class="copy-btn" data-report="arrest">Marsy's Rights Card</button>
+            <span class="copy-success" id="arrest-success">Copied!</span>
+        </div>
+        <div id="tow-report" style="
+        font-family: serif;
+        text-align: left;
+        border: 1px solid black;
+        padding: 2em;
+        box-shadow: 4px 8px #888888;
+        margin-bottom: 20px;
+      ">
+            <p style="text-align: top">
+                <strong>Marsy's Rights Card<br />
+                    <hr />
+                </strong><br />
+            </p>
+
+            <p id="details-section">
+                THE VICTIMS’ BILL OF RIGHTS ACT OF 2008<br />
+                Marsy’s Card and Resources<br />
+                To provide victims with rights to justice and due process<br />
+                ____________________________________________________<br /><br />
+
+                Officer’s Name:<br />
+                Telephone:<br /><br />
+
+                Prosecutor’s Name:<br />
+                Telephone:<br /><br />
+
+                Police Report #:<br />
+                Defendant’s Name:<br /><br />
+
+                Sup. Court #:<br />
+                DOB:<br />
+                ____________________________________________________<br /><br />
+
+                On November 4, 2008, the People of the State of California approved Proposition 9, the Victims’ Bill of
+                Rights Act of 2008: Marsy’s Law. This measure amended the California Constitution to provide additional
+                rights to victims. This card contains specific sections of the Victims’ Bill of Rights and resources.
+                Crime victims may obtain additional information regarding Marsy’s Law and local Victim Witness
+                Assistance Center information by contacting the Attorney General’s Victims’ Services Unit at
+                1-877-433-9069.<br /><br />
+
+                A “victim” is defined under the California Constitution as “a person who suffers direct or threatened
+                physical, psychological, or financial harm as a result of the commission or attempted commission of a
+                crime or delinquent act. The term ‘victim’ also includes the person’s spouse, parents, children,
+                siblings, or guardian, and includes a lawful representative of a crime victim who is deceased, a minor,
+                or physically or psychologically incapacitated. The term ‘victim’ does not include a person in custody
+                for an offense, the accused, or a person whom the court finds would not act in the best interests of a
+                minor victim.” (Cal. Const., art. I, § 28(e))<br />
+                ____________________________________________________<br /><br />
+
+                STATEWIDE VICTIM RESOURCES<br /><br />
+
+                Adult Protective Services<br />
+                Protects elder and dependent adults from neglect, abuse, or exploitation.<br />
+                Call: 1-833-401-0832<br /><br />
+
+                CA Dept. of Corrections and Rehabilitation, Office of Victim & Survivor Rights & Services (OVSRS)<br />
+                Information on parole hearings, custody status, restitution.<br />
+                Call: 1-877-256-6877<br />
+                Email: www.cdcr.ca.gov/victim_services<br /><br />
+
+                Victim Compensation Program (CalVCB)<br />
+                Can reimburse eligible crime-related costs.<br />
+                Call: 1-800-777-9229<br />
+                Visit: www.victims.ca.gov<br /><br />
+
+                California Victims Resource Center<br />
+                Provides rights info, local resources, and restitution help.<br />
+                Call: 1-800-VICTIMS<br />
+                Visit: www.1800victims.org<br /><br />
+
+                California Relay Service<br />
+                Communication Assistants for speech/hearing impaired.<br />
+                Dial: 711 or 1-800-735-2929<br /><br />
+
+                Victim/Witness Assistance Centers<br />
+                For local advocacy and resources.<br />
+                Call: 1-877-433-9069<br />
+                Visit: www.oag.ca.gov/VictimServices<br />
+                Email: victimservices@doj.ca.gov<br />
+                ____________________________________________________<br /><br />
+
+                NATIONAL VICTIM RESOURCES<br /><br />
+
+                National Center for Victims of Crime: 1-202-467-8700 • victimsofcrime.org<br />
+                National Child Abuse Hotline: 1-800-4-A-CHILD • childhelphotline.org<br />
+                National Domestic Violence Hotline: 1-800-799-SAFE • thehotline.org<br />
+                National Human Trafficking Hotline: 1-888-373-7888 • humantraffickinghotline.org<br />
+                National Sexual Assault Hotline: 1-800-656-HOPE • rainn.org<br /><br />
+
+                The definition of victim under the Victim Compensation Program may differ from the definition under the
+                California Constitution.<br />
+                ____________________________________________________<br /><br />
+
+                Victims’ Bill of Rights<br />
+                California Constitution, Article I, Section 28(b)<br /><br />
+
+                In order to preserve and protect a victim’s rights to justice and due process, a victim shall be
+                entitled to the following rights:<br /><br />
+
+                To be treated with fairness and respect for privacy and dignity.<br />
+
+                To be reasonably protected from the defendant.<br />
+
+                To have victim/family safety considered in bail decisions.<br />
+
+                To prevent the disclosure of confidential information.<br />
+
+                To refuse interviews or depositions by the defense.<br />
+
+                To notice of and confer with prosecutors upon request.<br />
+
+                To notice and presence at public proceedings and parole hearings.<br />
+
+                To be heard at key stages upon request.<br />
+
+                To a speedy trial and prompt resolution.<br />
+
+                To give input on sentencing impact.<br />
+
+                To receive the pre-sentence report upon request.<br />
+
+                To be informed of sentencing, incarceration, and release details.<br />
+
+                To restitution.<br />
+                  A. All victims have a right to restitution.<br />
+                  B. Restitution is required in every case.<br />
+                  C. Payments go first to victim restitution.<br />
+
+                To the prompt return of property.<br />
+
+                To be informed and participate in parole procedures.<br />
+
+                To have safety considered in release decisions.<br />
+
+                To be informed of all the above rights.<br /><br />
+
+                A victim, their attorney, lawful representative, or the prosecutor (upon request) may enforce these
+                rights in court. The court shall act promptly on such a request.<br />
+                ____________________________________________________<br /><br />
+
+                (Cal. Const., art. I, § 28(c)(1))<br />
+
+            </p>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="copyButtons.js"></script>
+</body>
+
+</html>
