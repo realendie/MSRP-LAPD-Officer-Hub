@@ -1,0 +1,215 @@
+CITY OF LOS ANGELES
+AUTOMOBILE ACCIDENT REPORT
+____________________________________________________  
+
+DATE OF ACCIDENT: 00 / 00 / 00
+TIME: 00 : 00 am / pm
+LOCATION (Street, Freeway):
+CITY:
+____________________________________________________  
+
+CITY VEHICLE GOING TO (Address):
+COMING FROM (Address):
+PURPOSE OF TRIP:
+____________________________________________________
+
+PART I - CITY VEHICLE
+
+DRIVER'S NAME:
+RESIDENCE ADDRESS:
+CITY:
+ZIP CODE:
+RES. PHONE NO:
+DATE OF BIRTH:
+____________________________________________________
+
+DEPARTMENT/BUREAU:
+SUPERVISOR'S NAME:
+BUISNESS ADDRESS (Buidling and Room No., Section):
+MAIL STOP:
+BUS. PHONE NO. (Ext.):
+
+MAKE:
+MODEL:
+YEAR:
+EQUIP. NO.:
+LICENSE NO.:
+REGISTERED OWNER:
+DRIVER LICENSE#:
+
+MILEAGE VEHICLE: Yes / No
+IF YES, NAME OF INSURANCE COMPANY:
+POLICY #:
+INS. CO. NOTIFIED?: Yes / No
+____________________________________________________
+
+PASSENGER(S):
+
+NAME:
+ADDRESS:
+CITY EMPLOYEE?: Yes / No
+
+NAME:
+ADDRESS:
+CITY EMPLOYEE?: Yes / No
+____________________________________________________
+
+WAS ANY PERSON IN CITY VEHICLE INJURED?: Yes / No
+WAS CITY VEHICLE DAMAGED?: Yes / No
+POINTS OF IMPACT:
+
+ODOMETER READING:
+PART OF VEHICLE DAMAGED:
+____________________________________________________
+
+PART II - OTHER VEHICLE
+
+DRIVER'S NAME:
+ADDRESS:
+DRIVER LICENSE#:
+RES. PHONE NO.:
+AGE:
+____________________________________________________
+
+EMPLOYER:
+EMPLOYER'S ADDRESS:
+BUS. PHONE NO. (Ext.):
+____________________________________________________
+
+MAKE:
+MODEL:
+YEAR:
+LICENSE NO.:
+REGISTERED OWNER (Name & Address):
+INSURANCE COMPANY:
+POLICY #:
+____________________________________________________
+
+PASSENGER(S):
+
+NAME:
+ADDRESS:
+BUS. PHONE NO. (ext.):
+RES. PHONE NO.:
+
+NAME:
+ADDRESS:
+CITY EMPLOYEE?: Yes / No
+____________________________________________________
+
+WAS OTHER VEHICLE DAMAGED?: Yes/No
+PART OF VEHICLE DAMAGED:
+WAS ANY PERSON IN OTHER VEHICLE INJURED?: Yes/No
+____________________________________________________
+
+PART III
+
+LIST PROPERTY THAT WAS DAMAGED OR CLAIMED TO BE DAMAGED:
+OWNER'S NAME:
+ADDRESS:
+PHONE NO.:
+DESCRIBE PROPERTY:
+____________________________________________________
+
+COMPLETE AND SIGN ORIGINAL ON BOTH PAGES
+
+TYPED NAME AND TITLE OF PERSON FILING REPORT:
+EMPLOYEE SIGNATURE:
+DATE:
+____________________________________________________
+
+Form Gen. 88 (Rev. 1/06)
+PAGE 1
+____________________________________________________
+
+THE INFORMATION CONTAINED ON THIS PAGE IS CONFIDENTIAL ATTORNEY-CLIENT AND WORK-PRODUCT INFORMATION. THIS
+INFORMATION SHALL BE SUBMITTED TO AND RETAINED BY THE CITY ATTORNEY'S OFFICE.
+____________________________________________________
+
+PART IV - WITNESSES
+
+NAME:
+ADDRESS:
+BUS. PHONE NO. (Ext.):
+PHONE NO. (residence):
+
+NAME:
+ADDRESS:
+BUS. PHONE NO. (Ext.):
+PHONE NO. (residence):
+
+NAME:
+ADDRESS:
+BUS. PHONE NO. (Ext.):
+PHONE NO. (residence):
+____________________________________________________
+
+PART V - INJURIES
+
+NAME OF PERSON CLAIMING INJURY:
+Address:
+Phone:
+Sex:
+Age:
+
+NAME OF PERSON CLAIMING INJURY:
+Address:
+Phone:
+Sex:
+Age:
+
+NAME OF PERSON CLAIMING INJURY:
+Address:
+Phone:
+Sex:
+Age:
+____________________________________________________
+
+PART VI - DESCRIPTION OF ACCIDENT
+
+L.A.P.D INVESIGATION?: Yes/No
+NAME OF OTHER INVESTIGATING POLICE DEPARTMENT(if no investigation, indicate "NONE")
+DIRECTION CITY VEHICLE WAS TRAVELING:
+STREET:
+SPEED:
+SPEED LIMIT:
+
+TRAFFIC CONTROL:
+    [] NONE
+    [] STOP SIGN
+    [] SIGNAL
+    [] OTHER (Specify):
+WAS TRAFFIC CONTROL OBEYED?: Yes/No
+
+DIRECTION OTHER VEHICLE WAS TRAVELING:
+STREET:
+SPEED:
+SPEED LIMIT:
+
+TRAFFIC CONTROL:
+    [] NONE
+    [] STOP SIGN
+    [] SIGNAL
+    [] OTHER (Specify):
+WAS TRAFFIC CONTROL OBEYED?: Yes/No
+____________________________________________________
+
+WEATHER CONDITION:
+TIME: Day / Night
+VISIBILITY: Good/Poor
+____________________________________________________
+
+Describe the facts of the accident in detail.:
+____________________________________________________
+
+EMPLOYEE SIGNATURE:
+DATE:
+
+SUPERVISOR'S COMMMENT:
+SUPERVISOR'S SIGNATURE:
+DATE:
+____________________________________________________
+
+Form Gen. 88 (Rev. 1/06)
+PAGE 2
+____________________________________________________
